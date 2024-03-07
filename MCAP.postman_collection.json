@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "4bd9aff9-584a-4ccd-94fa-9cf4bd11d9dc",
+		"name": "MCAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1721520"
+	},
+	"item": [
+		{
+			"name": "Get All Homeowners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/homeowners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"homeowners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Homeowner By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/homeowners/65e9f99ce5c5d491522c8d0a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"homeowners",
+						"65e9f99ce5c5d491522c8d0a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Homeowner By Name or Address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/homeowners/search?name=Karan&address=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"homeowners",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Karan"
+						},
+						{
+							"key": "address",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Homeowner",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\"?>\r\n<homeowner>\r\n    <name>Karan</name>\r\n    <dateofbirth>1994-09-14</dateofbirth>\r\n    <address>38 Upper Montagu Street, Westminster W1H 1LJ, United Kingdom</address>\r\n</homeowner>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/homeowners/65ea2a14ab2df05fb9f9d914",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"homeowners",
+						"65ea2a14ab2df05fb9f9d914"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Homeowner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\"?>\r\n<homeowner>\r\n    <name>Karan Shaw</name>\r\n    <dateofbirth>1990-01-01</dateofbirth>\r\n    <address>123 11 Rue Grenette, 69002 Lyon, France</address>\r\n</homeowner>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/homeowners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"homeowners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Homeowner By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/homeowners/65e9f99ce5c5d491522c8d0a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"homeowners",
+						"65e9f99ce5c5d491522c8d0a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Homeowners By Multiple IDs",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\"?>\r\n<homeowner>\r\n    <ids>65ea0ba0fb7696b38b875989</ids>\r\n    <ids>65ea0bb3fb7696b38b87598c</ids>\r\n</homeowner>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/homeowners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"homeowners"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
