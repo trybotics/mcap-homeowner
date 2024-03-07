@@ -11,7 +11,7 @@ API will run on [http://localhost:3000](http://localhost:3000)
 ### `npm test`
 To run the test.
 
-##### create or update your .env file in inside homeowner project folder
+##### Create or update your .env file inside the mcap-homeowner project folder
 ```
 PORT=3000
 DBURI=mongodb://127.0.0.1:27017/mcap-homeowner
