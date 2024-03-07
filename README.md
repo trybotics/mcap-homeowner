@@ -1,3 +1,5 @@
+### `npm i` To install the npm packages.
+
 ## Available Scripts
 
 In the project directory, you can run:
