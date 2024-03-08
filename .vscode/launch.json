@@ -22,8 +22,8 @@
       "skipFiles": ["<node_internals>/**"],
       "env": {
         "APP_ENV": "dev",
-        "NODE_ENV": "test",
-        "PORT": "8080"
+        "NODE_ENV": "TEST",
+        "TEST_PORT": "8080"
       }
     }
   ]

@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node src/app.js",
     "start:dev": "nodemon src/app.js",
-    "test": "npx jest"
+    "test": "set NODE_ENV=TEST&& npx jest"
   },
   "keywords": [
     "homeowner"

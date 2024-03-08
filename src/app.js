@@ -14,7 +14,7 @@ app.use("/homeowners", homeownerRoutes);
 // Connect to MongoDB
 mongoose.connect(process.env.DBURI);
 
-const port = process.env.PORT;
+const port = process.env.NODE_ENV === 'TEST'? process.env.TEST_PORT : process.env.PORT;
 const server = app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

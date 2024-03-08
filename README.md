@@ -8,6 +8,7 @@ npm i
 Create or update your .env file inside the **mcap-homeowner** project folder with the following configuration:
 ```
 PORT=3000
+TEST_PORT=3001
 DBURI=mongodb://127.0.0.1:27017/mcap-homeowner
 APIKEY=4eaa53ee73d74a1aa872ec825925de80
 ```
