@@ -1,3 +1,35 @@
+# Create a microservice using NodeJS/ExpressJS to store/read and update/delete homeowner information.
+## Requirements: 
+- REQUEST Format
+  - XML Document
+  - MODIFY Resource
+- CREATE Resource
+  - Receives an XML document and parses the information required.
+  - Calculate the homeowner’s age based on the supplied Date of Birth.
+  - Make a 3rd party call to retrieve the geocoordinates of the home.
+  - Stores the homeowner’s information in DBNo updates are allowed when the homeowner exists. 
+- READ Resource
+  - Ability to retrieve homeowner document(s) by:
+    - ID
+    - Search parameters
+    - All
+- Update parts of the homeowner document
+  - DELETE Resource
+  - By ID
+  - By multiple IDs
+
+## Acceptance Criteria:
+- RESTful microservice Tech Stack  
+  - mongoDB
+  - nodeJS - 18.17.1
+  - expressJS – 4.17.1
+  - JEST – 29.7.0
+  - All Functionality is Unit tested.
+- Appropriate HTTP Request Methods are used for each resource.
+- Solution should not include node Modules
+- Solution can be built locally on any desktop
+
+
 # Setup
 ## Install Dependencies
 Run the following command to install the necessary npm packages:
