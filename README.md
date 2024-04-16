@@ -69,8 +69,8 @@ To run tests, use the following command:
 npm test
 ```
 
-## Demo Videos
-Check out the project demo videos:
+## Solution Demo Videos
+Video showcasing our assessment solution:
 - [Part 1](https://www.loom.com/share/038fd6ab836a44b584acb0d9bab81bee?sid=2ba983e5-4734-4a60-a3f6-11aa68f595dc)
 - [Part 2](https://www.loom.com/share/252e3e26345a43af95644b702b88e1a1?sid=ee5da967-bdc4-4092-8f7e-24a18d2104f6)
 - [Part 3](https://www.loom.com/share/5dfb7297d69548dcb51ebc28e67baa21?sid=ddf5e657-68a5-47ab-a3b6-05335beae9f9)
