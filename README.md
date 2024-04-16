@@ -1,4 +1,4 @@
-# Create a microservice using NodeJS/ExpressJS to store/read and update/delete homeowner information. - Assignment
+# Create the API microservice for the assignment using NodeJS/ExpressJS that can store, read, update, and delete homeowner information.
 ## Requirements: 
 - REQUEST Format
   - XML Document
